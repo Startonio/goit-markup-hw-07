@@ -21,18 +21,18 @@
     <!-- NAVIGATION -->
     <header class="header">
         <div class="container header-container">
-            <nav class="header-navigation"><!-- / слеш як силка, повернутись назад в <a href="/"> -->
+            <nav class="header-navigation">
                 <a href="./index.html" class="logo-left link">
                     Web<span class="logo-right link">Studio</span>
                 </a>
-                <!--  Список елементів в якх є посилань -->
-                <!-- header and links -->
+
+
                 <ul class="header-list  list">
                     <li class="header-item">
-                        <a class="nav-link link" href="./index.html">Studio</a>
+                        <a class="nav-link link current" href="./index.html">Studio</a>
                     </li>
                     <li class="header-item">
-                        <a class="nav-link link current" href="./portfolio.html">Portfolio</a>
+                        <a class="nav-link link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="header-item">
                         <a class="nav-link link" href="">Contacts</a>
@@ -40,18 +40,90 @@
                 </ul>
             </nav>
 
-            <!-- Список контактів  -->
+
 
             <address class="header-adderess">
                 <ul class="adrdress-list list">
                     <li class="header-item">
-                        <a class="address-link mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="header-contact mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li class="header-item">
-                        <a class="address-link phone link" href="tel:+110001111111"> +11 (000) 111-11-11</a>
+                        <a class="header-contact phone link" href="tel:+110001111111"> +11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
+            <button class="mobile-open-btn" data-menu-open type="button">
+                <svg class="mobile-open-icon" width="32" height="22">
+                    <use href="./images/svg-photo/icons.svg#icon-round-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+
+        <div class="mobile-menu is-hidden" data-menu>
+            <div>
+                <button type="button" data-menu-close class="mobile-close-btn">
+                    <svg class="mobile-close-icon" width="8" height="8">
+                        <use href="./images/svg-photo/icons.svg#icon-close-black-modal"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="mobile-menu-list list">
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link link" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <ul class="mobile-adress-list list">
+                    <li class="mobiler-adress-item link">
+                        <a class="mobile-tel link" href="tel:+110001111111">
+                            +11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-adress-item link">
+                        <a class="mobile-email link" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-soc-list list">
+                    <li class="mobile-soc-item">
+                        <a class="mobile-soc-link link" href>
+                            <svg class="mobile-soc-icon" width="16" height="16">
+                                <use href="./images//svg-photo/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a class="mobile-soc-link link" href>
+                            <svg class="mobile-soc-icon" width="16" height="16">
+                                <use href="./images/svg-photo/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a class="mobile-soc-link link" href>
+                            <svg class="mobile-soc-icon" width="16" height="16">
+                                <use href="./images/svg-photo/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a class="mobile-soc-link link" href>
+                            <svg class="mobile-soc-icon" width="16" height="16">
+                                <use href="./images/svg-photo/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>

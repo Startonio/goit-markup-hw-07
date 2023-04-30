@@ -163,6 +163,10 @@ body {
     margin-bottom: 32px;
 }
 
+.mobile-close-btn is (:hover, :focus) {
+    background-color: var(--focus-hover);
+}
+
 .mobile-menu-item:not(:last-child) {
     margin-bottom: 40px;
 }
@@ -296,7 +300,7 @@ body {
 }
 
 .adrdress-list {
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -307,6 +311,7 @@ body {
 .phone {
     width: 150px;
 }
+
 
 
 /**------------------------------------------------ HERO-SECTION -------------------------------------------------*/
