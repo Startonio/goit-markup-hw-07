@@ -22,13 +22,13 @@
 <body>
     <!-- Шапка сайту. -->
     <header class="header">
-        <!-- <div class="container header-container">
+        <div class="container header-container">
             <nav class="header-navigation">
                 <a href="./index.html" class="logo-left link">
                     Web<span class="logo-right link">Studio</span>
                 </a>
-              
-               
+
+
                 <ul class="header-list  list">
                     <li class="header-item">
                         <a class="nav-link link current" href="./index.html">Studio</a>
@@ -42,34 +42,106 @@
                 </ul>
             </nav>
 
-           
+
 
             <address class="header-adderess">
                 <ul class="adrdress-list list">
                     <li class="header-item">
-                        <a class="address-link mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="header-contact mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li class="header-item">
-                        <a class="address-link phone link" href="tel:+110001111111"> +11 (000) 111-11-11</a>
+                        <a class="header-contact phone link" href="tel:+110001111111"> +11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
-        </div> -->
+            <button class="mobile-open-btn" data-menu-open type="button">
+                <svg class="mobile-open-icon" width="32" height="22">
+                    <use href="./images/svg-photo/icons.svg#icon-round-menu"></use>
+                </svg>
+            </button>
+        </div>
+
+
+        <div class="mobile-menu is-hidden" data-menu>
+            <div>
+                <button type="button" data-menu-close class="mobile-close-btn">
+                    <svg class="mobile-close-icon" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                    </svg>
+                </button>
+                <nav>
+                    <ul class="mobile-menu-list list">
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link link" href="./index.html">Studio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="mobile-menu-item">
+                            <a class="mobile-menu-link link" href="">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <ul class="mobile-adress-list list">
+                    <li class="mobiler-adress-item link">
+                        <a class="mobile-tel link" href="tel:+110001111111">
+                            +11 (000) 111-11-11</a>
+                    </li>
+                    <li class="mobile-adress-item link">
+                        <a class="mobile-email link" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+
+                <ul class="mobile-soc-list list">
+                    <li class="mobile-soc-item">
+                        <a class="mobile-soc-link link" href>
+                            <svg class="mobile-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a class="mobile-soc-link link" href>
+                            <svg class="mobile-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a class="mobile-soc-link link" href>
+                            <svg class="mobile-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-soc-item">
+                        <a class="mobile-soc-link link" href>
+                            <svg class="mobile-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
     <!-- hero image -  головний абзац сторінки  -->
     <main>
-        <!-- <section class="hero-list">
+        <section class="hero">
             <div class="container">
                 <div class="hero-wrap">
                     <h1 class="hero-title">Effective Solutions for Your Business</h1>
                     <button type="button" class="button-hero" data-modal-open>Order Service</button>
                 </div>
             </div>
-        </section> -->
+        </section>
 
 
         <!------------------------------------------------------ section ABOUT  ------------------------------------------>
-        <!-- <section class="about">
+        <section class="about">
             <div class="container">
                 <h2 hidden class="section-title">Description</h2>
                 <ul class="about-list list">
@@ -79,8 +151,8 @@
                                 <use href="./images/svg-photo/icons.svg#icon-antenna"></use>
                             </svg>
                         </div>
-                        <h3 class="about-headline-item">Strategy</h3>
-                        <p class="about-text-item">
+                        <h3 class="about-title">Strategy</h3>
+                        <p class="about-text">
                             Our goal is to identify the business
                             problem to walk away with the perfect and creative solution.
                         </p>
@@ -92,8 +164,8 @@
                                 <use href="./images/svg-photo/icons.svg#icon-clock"></use>
                             </svg>
                         </div>
-                        <h3 class="about-headline-item">Punctuality</h3>
-                        <p class="about-text-item">
+                        <h3 class="about-title">Punctuality</h3>
+                        <p class="about-text">
                             Bring the key message to the brand's audience for the best price
                             within
                             the
@@ -107,8 +179,8 @@
                                 <use href="./images/svg-photo/icons.svg#icon-diagram"></use>
                             </svg>
                         </div>
-                        <h3 class="about-headline-item">Diligence</h3>
-                        <p class="about-text-item">
+                        <h3 class="about-title">Diligence</h3>
+                        <p class="about-text">
                             Research and confirm brands that present the strongest digital growth
                             opportunities and minimize
                             risk.
@@ -120,8 +192,8 @@
                                 <use href="./images/svg-photo/icons.svg#icon-astronaut"></use>
                             </svg>
                         </div>
-                        <h3 class="about-headline-item">Technologies</h3>
-                        <p class="about-text-item">
+                        <h3 class="about-title">Technologies</h3>
+                        <p class="about-text">
                             Design practice focused on digital experiences. We bring forth a deep
                             passion
                             for
@@ -130,32 +202,34 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!---------------------------------------------------- section DOING -------------------------------------------->
-        <!-- <section class="doing">
+        <section class="doing">
             <div class="container">
                 <h2 class="doing-title">What are we doing</h2>
                 <ul class="doing-list list">
                     <li class="doing-item">
-                        <img src="./images/image1.jpg" alt="The first picture" width="360">
+                        <img src="./images/image1.jpg" alt="computer" width="360" srcset="./images/image1-2x.jpg 2x">
                     </li>
                     <li class="doing-item">
-                        <img src="./images/image2.jpg" alt="The second picture" width="360">
+                        <img src="./images/image2.jpg" alt="device" width="360" srcset="./images/image2-2x.jpg 2x">
                     </li>
                     <li class="doing-item">
-                        <img src="./images/image3.jpg" alt="The third picture" width="360">
+                        <img src="./images/image3.jpg" alt="device-laptop" width="360"
+                            srcset="./images/image3-2x.jpg 2x">
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
 
         <!------------------------------------------------------ section TEAM ------------------------------------------->
-        <!-- <section class="team">
+        <section class="team">
             <div class="container">
                 <h2 class="team-title">Our Team</h2>
                 <ul class="team-list list">
                     <li class="team-img-item">
-                        <img src="./images/employee1.jpg" alt="Mark Guerrero" width="264">
+                        <img src="./images/employee1.jpg" alt="Mark Guerrero" width="264"
+                            srcset="./images/employee1-2x.jpg 2x">
                         <div class="team-wrap-item">
                             <h3 class="team-headline-item">Mark Guerrero</h3>
                             <p class="team-text-item">Product Designer</p>
@@ -192,7 +266,8 @@
                         </div>
                     </li>
                     <li class="team-img-item">
-                        <img src="./images/employee2.jpg" alt="Anna Lee" width="264">
+                        <img src="./images/employee2.jpg" alt="Tom Ford" width="264"
+                            srcset="./images/employee2-2x.jpg 2x">
                         <div class="team-wrap-item">
                             <h3 class="team-headline-item">Tom Ford</h3>
                             <p class="team-text-item">Frontend Developer</p>
@@ -229,7 +304,8 @@
                         </div>
                     </li>
                     <li class="team-img-item">
-                        <img src="./images/employee3.jpg" alt="John Smith" width="264">
+                        <img src="./images/employee3.jpg" alt="Camila Garcia" width="264"
+                            srcset="./images/employee3-2x.jpg 2x">
                         <div class="team-wrap-item">
                             <h3 class="team-headline-item">Camila Garcia</h3>
                             <p class="team-text-item">Marketing</p>
@@ -266,7 +342,8 @@
                         </div>
                     </li>
                     <li class="team-img-item">
-                        <img src="./images/employee4.jpg" alt="Sarah Johnson" width="264">
+                        <img src="./images/employee4.jpg" alt="Daniel Wilson " width="264"
+                            srcset="./images/employee4-2x.jpg 2x">
                         <div class="team-wrap-item">
                             <h3 class="team-headline-item">Daniel Wilson</h3>
                             <p class="team-text-item">UI Designer</p>
@@ -304,9 +381,9 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!----------------------------------------------------- Customers ------------------------------------------->
-        <!-- <section class="customers">
+        <section class="customers">
             <div class="container">
                 <h2 class="customers-title">Customers</h2>
                 <ul class="customers-list list">
@@ -353,23 +430,24 @@
                     </li>
                 </ul>
                 <div>
-        </section> -->
+        </section>
     </main>
     <!----------------------------------------------------------- Footer ------------------------------------------->
     <footer class="footer-copyrigth">
-        <div class="container footer-wrap">
-            <div class="footer-container">
-                <div class="footer-logo">
+        <div class="container footer-container">
+            <div class="footer-wrap">
+                <div class="footer-box">
                     <a href="./index.html" class="logo-left link">
                         Web<span class="logo-right-footer link">Studio</span>
                     </a>
+
                     <p class="footer-text">Increase the flow of customers and sales for your business with digital
                         marketing
                         &
                         growth solutions.
                     </p>
                 </div>
-                <div class="footer-soc">
+                <div class="footer-soc-box">
                     <p class="footer-title">Social media</p>
                     <ul class="footer-soc-list list">
                         <li class="footer-soc-item">
@@ -426,7 +504,6 @@
             </div>
         </div>
     </footer>
-
     <!---------------------------------------------------------------------------MODAL ------------------------------------------------------------------------>
 
     <div class="backdrop is-hidden" data-modal>
