@@ -57,7 +57,7 @@ body {
 /* ------------------------------------------------------------скидання---------------------------------------- */
 
 .container {
-    width: 100%;
+    width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -163,7 +163,7 @@ body {
     margin-bottom: 32px;
 }
 
-.mobile-close-btn is (:hover, :focus) {
+.mobile-close-btn :hover {
     background-color: var(--focus-hover);
 }
 
@@ -193,8 +193,8 @@ body {
 }
 
 .mobile-tel {
-    font-weight: 700;
-    font-size: 26px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 1.53;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -304,9 +304,6 @@ body {
     align-items: center;
 }
 
-.mail {
-    margin-right: 40px;
-}
 
 .phone {
     width: 150px;
@@ -326,7 +323,7 @@ body {
     background-size: cover;
     /* padding: 188px 0;
     max-width: 1440px; */
-    max-width: 460px;
+    max-width: 428px;
     padding: 112px 0;
     margin: 0 auto;
     background-color: var(--background-title-color);
@@ -343,7 +340,7 @@ body {
 .hero-title {
     font-weight: 700;
     /* font-size: 56px; */
-    font-size: 32px;
+    font-size: 36px;
     line-height: 1.25;
     /* line-height: 1.07; */
     text-align: center;
@@ -408,9 +405,9 @@ body {
     gap: 72px;
 }
 
-.text-list {
+/* .text-list {
     width: 264px;
-}
+} */
 
 .about-title {
     font-style: normal;
@@ -617,7 +614,7 @@ body {
 } */
 
 .customers-link {
-    width: 168px;
+    width: 190px;
     height: 88px;
     display: flex;
     justify-content: center;
@@ -669,7 +666,6 @@ body {
 
 
 .logo-left {
-    margin: 0 auto;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 800;
@@ -772,7 +768,7 @@ body {
 .Subscribe {
     /* margin-left: 80px; */
     width: 100%;
-    text-align: center;
+
 }
 
 .footer-form {
@@ -790,7 +786,7 @@ body {
     border-radius: 4px;
     background-color: #2e2f42;
     color: #FFFFFF;
-    margin-right: 24px;
+    /* margin-right: 24px; */
     padding-left: 16px;
 }
 
@@ -818,7 +814,6 @@ body {
 .footer-form-btn {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 165px;
     height: 40px;
     background-color: #4d5ae5;
@@ -835,15 +830,15 @@ body {
     cursor: pointer;
     border: none;
     margin: 0 auto;
-    padding: 8px 24px;
+    padding: 8px 30px;
     transition: background-color var(--transition);
 }
 
-.plane {
 
+.plane {
     position: absolute;
     fill: #FFFFFF;
-    margin-left: 16px;
+    transform: translatex(225%);
 }
 
 .footer-form-btn:hover,

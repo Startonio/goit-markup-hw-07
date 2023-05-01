@@ -45,6 +45,7 @@
 
 }
 
+/* _____________________________________________________________________768__________________________________________________________________________ */
 @media screen and (min-width:768px) {
     .container {
         width: 768px;
@@ -155,11 +156,11 @@
     .adrdress-list {
         display: flex;
         align-items: center;
+        flex-direction: column;
+        gap: 4px;
     }
 
-    .mail {
-        margin-right: 40px;
-    }
+
 
     .phone {
         width: 150px;
@@ -169,18 +170,17 @@
     .hero {
         max-width: 768px;
         padding: 112px 0;
-        height: 436px;
     }
 
     .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img//hero-bg.jpg);
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img//hero-tab.jpg);
     }
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-bg-2px.jpg);
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-mob-2px.jpg);
         }
     }
 
@@ -198,6 +198,10 @@
 
     .about-list {
         gap: 72px 24px;
+    }
+
+    .text-list {
+        width: 356px;
     }
 
     .about-item {
@@ -220,6 +224,10 @@
     }
 
     /* customers */
+    .customers-link {
+        width: 168px;
+    }
+
     .customers-list {
         gap: 72px 24px;
     }
@@ -230,20 +238,23 @@
 
     /* footer */
     .footer-container {
-        display: block;
+        display: flex;
         flex-wrap: unset;
+        flex-direction: column;
         text-align: left;
+        width: 582px;
+        gap: 72px;
     }
 
     .footer-wrap {
         display: flex;
         align-items: unset;
         gap: 24px;
+        margin-bottom: 72px;
     }
 
     .footer-box {
         display: block;
-        margin-left: 108px;
         text-align: left;
         margin-bottom: 0;
     }
@@ -274,26 +285,25 @@
     }
 
     .footer-title-subscribe {
-        margin-left: 108px;
         margin-bottom: 16px;
     }
 
     .footer-form {
         display: inline-flex;
-        margin-left: 108px;
         align-items: center;
         gap: 24px;
     }
 
-    .footer-input {
+    /* .footer-input {
         width: 264px;
-    }
+    } */
 
     .wrap-btn {
         margin-top: unset;
     }
-
 }
+
+/* __________________________________________________________________________________1158______________________________________________________________ */
 
 @media screen and (min-width:1158px) {
     .container {
@@ -313,11 +323,6 @@
         top: 44px;
     }
 
-    .header-adress-list {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
 
     .header-contact {
         font-size: 16px;
@@ -326,7 +331,14 @@
         margin-bottom: 0;
     }
 
-
+    .adrdress-list {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-end;
+        justify-content: space-evenly;
+    }
 
     /* hero */
     .hero {
@@ -339,6 +351,18 @@
         margin-top: 48px;
     }
 
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img//hero-bg.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img/hero-bg-2px.jpg);
+        }
+    }
+
     /* about   */
 
     .about {
@@ -347,7 +371,8 @@
     }
 
     .about-list {
-        /* display: flex; */
+        display: flex;
+        flex-wrap: nowrap;
         align-items: center;
         gap: 24px;
     }
@@ -415,14 +440,19 @@
     }
 
     /* footer */
-    .footer {
+    .footer-copyrigth {
+        display: flex;
         padding-top: 100px;
         padding-bottom: 100px;
     }
 
     .footer-container {
         display: flex;
+        gap: unset;
+        flex-direction: row;
+        align-items: flex-start
     }
+
 
     .footer-wrap {
         gap: unset;
@@ -464,6 +494,8 @@
         align-items: center;
     }
 }
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
     .team>.container {
